@@ -37,3 +37,15 @@ print('id：', id(stu1), '类型：', type(stu1))  # 创建实例就开辟了新
 print(stu1)
 print('id：', id(stu2), '类型：', type(stu2))
 print(stu2)
+
+
+"""
+结果：
+-------------初始化属性--------------
+小舞
+20
+id： 140515772442272 类型： <class '__main__.Student'>
+<__main__.Student object at 0x7fcc60b3a6a0>
+id： 140515773065152 类型： <class '__main__.Student'>
+<__main__.Student object at 0x7fcc60bd27c0>
+"""

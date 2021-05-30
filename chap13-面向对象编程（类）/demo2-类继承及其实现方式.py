@@ -41,10 +41,19 @@ teacher = Teacher('lisi', 34, 10)
 stu.info()  # 这个info()方法是从父类继承过来的
 teacher.info()
 
-
+"""
+结果：
+姓名:Ailian, 年龄:20
+姓名:lisi, 年龄:34
+"""
 
 
 lst = ['a', 'b', 's', 'w', 'w', 'a', 1, 2, 2, 1, 2]
 new_lst = list(set(lst))
 print(new_lst)
+
+"""
+结果：
+[1, 2, 'b', 's', 'w', 'a']
+"""
 
