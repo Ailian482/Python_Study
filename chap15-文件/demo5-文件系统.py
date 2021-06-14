@@ -2,6 +2,8 @@
 # 作   者：Ailian
 # 开发时间：2021/6/13 下午5:46
 
+import os
+
 """
 os模块
 有了os模块，我们不需要关心什么操作系统下使用什么模块，os模块会帮你选择正确的模块并调用
@@ -29,9 +31,6 @@ os.sep 输出操作系统特定的路径分隔符（Win下'\\'，Linux下'/'）
 os.linesep 当前平台指定的行终止符（Win下'\r\n'，Linux下'\n'）
 os.name 指代当前使用的操作系统（包括：'posix'、'nt'、'mac'、'os2'、'ce'、'java'）
 """
-
-
-import os
 
 
 # os.getcwd() 返回当前工作目录的绝对路径
