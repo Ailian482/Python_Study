@@ -34,3 +34,7 @@ print(s5, type(s5))
 # 定义一个空集合
 s6 = set()
 print(s6, type(s6))
+
+# 定义一个不可变的集合，使用frozenset()方法
+num = frozenset([1, 2, 3, 4, 5, 5])
+print(num)
