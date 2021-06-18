@@ -26,10 +26,23 @@ python标注异常
     NameError：尝试访问一个不存在的变量
     NotImplementedError：尚未实现的方法
     OSError：操作系统产生的异常（例如打开一个不存在的文件）
+        FileNotFoundError：文件不存在
     OverflowError：数值运算超出最大限制
     ReferenceError：弱引用（weak reference）试图访问一个已经被垃圾回收机制回收了的对象
     SyntaxError：python的语法错误
-
+    RuntimeError：一般的运行时错误
+    IndentationError：缩进问题
+    TabError：Tab和空格混合使用
+    SystemError：Python编译器系统错误
+    SystemExit：Python编译器进程被关闭
+    TypeError：不同类型间的无效操作
+    UnboundLocalError：访问一个未初始化的本地变量（NameError的子类）
+    UnicodeError：Unicode相关的错误（ValueError的子类）
+    UnicodeEncodeError：Unicode编码时的错误（UnicodeError的子类）
+    UnicodeDecodeError：Unicode解码时的错误（UnicodeError的子类）
+    UnicodeRTranslateError：Unicode转换时的错误（UnicodeError的子类）
+    ValueError：传入参数无效
+    ZeroivisionError：除数为0
 """
 
 # file_name = input('请输入需要打开的文件名：')
@@ -52,4 +65,8 @@ print(ele)
 my_dict = {'one': 1, 'two': 2, 'three': 3}
 # my_dict['four']  # KeyError: 'four'
 my_dict.get('four')  # 字典的 get() 方法比使用 索引好
+
+# print(1 + '1')  # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+# print(3/0)  # ZeroDivisionError: division by zero
 
