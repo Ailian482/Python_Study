@@ -26,7 +26,7 @@ python标注异常
     NameError：尝试访问一个不存在的变量
     NotImplementedError：尚未实现的方法
     OSError：操作系统产生的异常（例如打开一个不存在的文件）
-        FileNotFoundError：文件不存在
+    FileNotFoundError：文件不存在
     OverflowError：数值运算超出最大限制
     ReferenceError：弱引用（weak reference）试图访问一个已经被垃圾回收机制回收了的对象
     SyntaxError：python的语法错误
