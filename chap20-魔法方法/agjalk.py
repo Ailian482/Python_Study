@@ -12,56 +12,73 @@
     每条鱼和乌龟最多移动15次，如果移动15次乌龟还没有吃掉所有的鱼，那么游戏结束，如果游动15次以内把所有鱼都吃完，游戏也结束
 """
 
-import random as r
+# import random as r
+#
+#
+# class Fish:  # 定义一个鱼类
+#     def __init__(self):
+#         self.x = r.randint(0, 10)
+#         self.y = r.randint(0, 10)
+#
+#     def move(self):
+#         if self.x == 0:
+#             self.x += 1
+#         elif self.x > 0:
+#             self.x -= 1
+#         return (self.x, self.y)
+#
+#     def getPosition(self):
+#         return (self.x, self.y)
+#
+#
+# class Turtle(Fish):  # 定义一个乌龟类
+#     def move(self):
+#         self.x = r.randint(0, 10)
+#         self.y = r.randint(0, 10)
+#
+#     def getPosition(self):
+#         return (self.x, self.y)
+#
+#
+# class GoldFish(Fish):
+#     pass
+#
+#
+# class Salmon(Fish):
+#     pass
+#
+#
+# num = 10
+# count = 0
+# g = GoldFish()
+# print(g.getPosition())
+# s = Salmon()
+# t = Turtle()
+# while count < 15:
+#     for p_fish in range(10):
+#         fish_p = g.getPosition()
+#         if g.getPosition() == t.getPosition():
+#             num -= 1
+#         else:
+#             g.move()
+#     count += 1
 
 
-class Fish:  # 定义一个鱼类
-    def __init__(self):
-        self.x = r.randint(0, 10)
-        self.y = r.randint(0, 10)
-
-    def move(self):
-        if self.x == 0:
-            self.x += 1
-        elif self.x > 0:
-            self.x -= 1
-        return (self.x, self.y)
-
-    def getPosition(self):
-        return (self.x, self.y)
+def foo(num):
+    print("starting...")
+    while num < 10:
+        num = num+1
+        yield num
 
 
-class Turtle(Fish):  # 定义一个乌龟类
-    def move(self):
-        self.x = r.randint(0, 10)
-        self.y = r.randint(0, 10)
+for i in range(10):
+    print(i)
 
-    def getPosition(self):
-        return (self.x, self.y)
+print(range)
 
+f = foo(0)  # 这是一个生成器
+print(f)  # <generator object foo at 0x7fcfad670f20>
 
-class GoldFish(Fish):
-    pass
-
-
-class Salmon(Fish):
-    pass
-
-
-num = 10
-count = 0
-g = GoldFish()
-print(g.getPosition())
-s = Salmon()
-t = Turtle()
-while count < 15:
-    for p_fish in range(10):
-        fish_p = g.getPosition()
-        if g.getPosition() == t.getPosition():
-            num -= 1
-        else:
-            g.move()
-    count += 1
-
-
+for n in foo(0):
+    print(n)
 
