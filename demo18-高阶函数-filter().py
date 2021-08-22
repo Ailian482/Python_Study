@@ -5,8 +5,8 @@
 """
 filter(func, iterable)
 功能：
-    过滤数据，把 iterable 中的每一个元素拿到 func 函数中进行处理，
-    如果函数返回 True 则保留这个数据，返回 False 则丢弃这个数据
+    过滤数据，把 iterable 中的每一个元素拿到 func 函数中进行处理返回，
+    如果函数 True 则保留这个数据，返回 False 则丢弃这个数据
 参数：
     func：自定义函数
     iterable：可迭代的数据

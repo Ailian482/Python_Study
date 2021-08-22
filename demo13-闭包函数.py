@@ -45,29 +45,44 @@ def buy():
 # work()
 # print(money)
 
-# 对程序进行改造 成 闭包函数
+# 对程序进行改造 成 闭包函数，如果传入工作、加班，则 总金额增加，如果是购物则 总金额减少
 
 def person():
-    money = 0
+    per_money = 0
+    while True:
+        per_type = input("请输入一个类型(工作、加班、购物)：")
+        # 工作
+        if per_type == "工作":
+            def work():
+                # 在内函数中使用了外函数的临时变量
+                nonlocal per_money
+                per_money += 100
+                print(per_money)
 
-    # 工作
-    def work():
-        # 在内函数中使用了外函数的临时变量
-        nonlocal money
-        money += 100
-        print(money)
-    # 在外函数中返回了内函数，这个函数就是闭包函数
-    return work
+            # 在外函数中返回了内函数，这个函数就是闭包函数
+            return work
 
-    # # 加班
-    # def overtime():
-    #     nonlocal money
-    #     money += 200
-    #
-    # # 购物
-    # def buy():
-    #     nonlocal money
-    #     money -= 50
+        # 加班
+        elif per_type == "加班":
+            def overtime():
+                nonlocal per_money
+                per_money += 200
+                print(per_money)
+            return overtime
+
+        # 购物
+        elif per_type == "购物":
+            def buy():
+                nonlocal per_money
+                per_money -= 50
+                print(per_money)
+            return buy
+
+        # 其他 报错
+        else:
+            print("请重新输入正确的类型！")
+            continue
+
 
 res = person()  # return work res=work
 res()
