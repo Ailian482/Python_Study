@@ -29,3 +29,5 @@ Window.setLayout(Window.layout)
 Window.show()
 # 运行程序
 sys.exit(app.exec_())
+
+

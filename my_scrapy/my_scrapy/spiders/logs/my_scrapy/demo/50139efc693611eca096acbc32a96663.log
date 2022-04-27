@@ -1,0 +1,268 @@
+2021-12-30 14:04:18 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: my_scrapy)
+2021-12-30 14:04:18 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.5 (v3.9.5:0a7dcbdb13, May  3 2021, 13:17:02) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform macOS-10.16-x86_64-i386-64bit
+2021-12-30 14:04:18 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-12-30 14:04:18 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'my_scrapy',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/my_scrapy/demo/50139efc693611eca096acbc32a96663.log',
+ 'NEWSPIDER_MODULE': 'my_scrapy.spiders',
+ 'SPIDER_MODULES': ['my_scrapy.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 '
+               'Safari/537.36'}
+2021-12-30 14:04:18 [scrapy.extensions.telnet] INFO: Telnet Password: 5f28a323825f7891
+2021-12-30 14:04:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-12-30 14:04:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-12-30 14:04:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-12-30 14:04:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['my_scrapy.pipelines.MyScrapyPipeline']
+2021-12-30 14:04:18 [scrapy.core.engine] INFO: Spider opened
+2021-12-30 14:04:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-12-30 14:04:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-12-30 14:04:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html#id2> (referer: None)
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['overview.html'], 'title': ['初窥Scrapy']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['install.html'], 'title': ['安装指南']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': ['\n'], 'link': [''], 'title': ['Scrapy入门教程']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#id2'], 'title': ['创建项目']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#item'], 'title': ['定义Item']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': ['\n'], 'link': ['#spider'], 'title': ['编写第一个爬虫(Spider)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': ['\n'], 'link': ['#id3'], 'title': ['爬取']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#id4'], 'title': ['刚才发生了什么？']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': ['\n'], 'link': ['#id5'], 'title': ['提取Item']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#selectors'], 'title': ['Selectors选择器简介']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#shellselector'], 'title': ['在Shell中尝试Selector选择器']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#id7'], 'title': ['提取数据']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#id8'], 'title': ['使用item']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#following-links'], 'title': ['追踪链接(Following links)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#id9'], 'title': ['保存爬取到的数据']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['#id10'], 'title': ['下一步']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['examples.html'], 'title': ['例子']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/commands.html'],
+ 'title': ['命令行工具(Command line tools)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/spiders.html'], 'title': ['Spiders']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/selectors.html'], 'title': ['选择器(Selectors)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/items.html'], 'title': ['Items']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/loaders.html'], 'title': ['Item Loaders']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/shell.html'],
+ 'title': ['Scrapy终端(Scrapy shell)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/item-pipeline.html'],
+ 'title': ['Item Pipeline']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/feed-exports.html'], 'title': ['Feed exports']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/request-response.html'],
+ 'title': ['Requests and Responses']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/link-extractors.html'],
+ 'title': ['Link Extractors']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/settings.html'], 'title': ['Settings']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/exceptions.html'], 'title': ['异常(Exceptions)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/logging.html'], 'title': ['Logging']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/stats.html'],
+ 'title': ['数据收集(Stats Collection)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/email.html'], 'title': ['发送email']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/telnetconsole.html'],
+ 'title': ['Telnet终端(Telnet Console)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/webservice.html'], 'title': ['Web Service']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../faq.html'], 'title': ['常见问题(FAQ)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/debug.html'],
+ 'title': ['调试(Debugging)Spiders']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/contracts.html'],
+ 'title': ['Spiders Contracts']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/practices.html'],
+ 'title': ['实践经验(Common Practices)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/broad-crawls.html'],
+ 'title': ['通用爬虫(Broad Crawls)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/firefox.html'], 'title': ['借助Firefox来爬取']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/firebug.html'], 'title': ['使用Firebug进行爬取']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/leaks.html'], 'title': ['调试内存溢出']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/media-pipeline.html'], 'title': ['下载及处理文件和图片']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/ubuntu.html'], 'title': ['Ubuntu 软件包']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/deploy.html'], 'title': ['Deploying Spiders']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/autothrottle.html'],
+ 'title': ['自动限速(AutoThrottle)扩展']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/benchmarking.html'], 'title': ['Benchmarking']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/jobs.html'], 'title': ['Jobs: 暂停，恢复爬虫']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/architecture.html'], 'title': ['架构概览']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/downloader-middleware.html'],
+ 'title': ['下载器中间件(Downloader Middleware)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../topics/spider-middleware.html'],
+ 'title': ['Spider中间件(Middleware)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/extensions.html'], 'title': ['扩展(Extensions)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/api.html'], 'title': ['核心API']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/signals.html'], 'title': ['信号(Signals)']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../topics/exporters.html'], 'title': ['Item Exporters']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [], 'link': ['../news.html'], 'title': ['Release notes']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../contributing.html'],
+ 'title': ['Contributing to Scrapy']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [],
+ 'link': ['../versioning.html'],
+ 'title': ['Versioning and API Stability']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [' »'], 'link': ['../index.html'], 'title': ['Docs']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': ['Scrapy入门教程'], 'link': [], 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': ['\n        \n          \n            ',
+          '\n          \n        \n      '],
+ 'link': ['https://github.com/marchtea/scrapy_doc_chs/blob/1.0/./intro/tutorial.rst'],
+ 'title': [' Edit on GitHub']}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 用于区别Spider。\n该名字必须是唯一的，您不可以为不同的Spider设定相同的名字。'],
+ 'link': ['../topics/spiders.html#scrapy.spiders.Spider.name'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 包含了Spider在启动时进行爬取的url列表。\n'
+          '因此，第一个被获取到的页面将是其中之一。\n'
+          '后续的URL则从初始的URL获取到的数据中提取。'],
+ 'link': ['../topics/spiders.html#scrapy.spiders.Spider.start_urls'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [' 是spider的一个方法。\n被调用时，每个初始URL完成下载后生成的 ',
+          '\n'
+          '对象将会作为唯一的参数传递给该函数。\n'
+          '该方法负责解析返回的数据(response data)，提取数据(生成item)以及生成需要进一步处理的URL的 ',
+          ' 对象。'],
+ 'link': ['../topics/spiders.html#scrapy.spiders.Spider.parse',
+          '../topics/request-response.html#scrapy.http.Response',
+          '../topics/request-response.html#scrapy.http.Request'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 选择HTML文档中 ', ' 标签内的 ', ' 元素'], 'link': [], 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 选择上面提到的 ', ' 元素的文字'], 'link': [], 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 选择所有的 ', ' 元素'], 'link': [], 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 选择所有具有 ', ' 属性的 ', ' 元素'], 'link': [], 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 传入xpath表达式，返回该表达式所对应的所有节点的selector list列表 。'],
+ 'link': ['../topics/selectors.html#scrapy.selector.Selector.xpath'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 传入CSS表达式，返回该表达式所对应的所有节点的selector list列表.'],
+ 'link': ['../topics/selectors.html#scrapy.selector.Selector.css'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 序列化该节点为unicode字符串并返回list。'],
+ 'link': ['../topics/selectors.html#scrapy.selector.Selector.extract'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html>
+{'desc': [': 根据传入的正则表达式对数据进行提取，返回unicode字符串list列表。'],
+ 'link': ['../topics/selectors.html#scrapy.selector.Selector.re'],
+ 'title': []}
+2021-12-30 14:04:20 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-12-30 14:04:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 340,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15341,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.284624,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 12, 30, 6, 4, 20, 177987),
+ 'httpcompression/response_bytes': 61528,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 72,
+ 'log_count/DEBUG': 73,
+ 'log_count/INFO': 10,
+ 'memusage/max': 57118720,
+ 'memusage/startup': 57118720,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 12, 30, 6, 4, 18, 893363)}
+2021-12-30 14:04:20 [scrapy.core.engine] INFO: Spider closed (finished)

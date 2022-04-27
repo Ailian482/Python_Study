@@ -1,0 +1,267 @@
+2021-12-30 14:03:43 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: my_scrapy)
+2021-12-30 14:03:43 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.5 (v3.9.5:0a7dcbdb13, May  3 2021, 13:17:02) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform macOS-10.16-x86_64-i386-64bit
+2021-12-30 14:03:43 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-12-30 14:03:43 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'my_scrapy',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/my_scrapy/douban/3cdb8192693611eca096acbc32a96663.log',
+ 'NEWSPIDER_MODULE': 'my_scrapy.spiders',
+ 'SPIDER_MODULES': ['my_scrapy.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 '
+               'Safari/537.36'}
+2021-12-30 14:03:43 [scrapy.extensions.telnet] INFO: Telnet Password: caa06faaaae86aaa
+2021-12-30 14:03:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-12-30 14:03:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-12-30 14:03:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-12-30 14:03:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['my_scrapy.pipelines.MyScrapyPipeline']
+2021-12-30 14:03:43 [scrapy.core.engine] INFO: Spider opened
+2021-12-30 14:03:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-12-30 14:03:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-12-30 14:03:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0> (referer: None)
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '不要抬头',
+ 'movie_rate': '7.5',
+ 'movie_url': 'https://movie.douban.com/subject/34884712/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '黑客帝国：矩阵重启',
+ 'movie_rate': '5.7',
+ 'movie_url': 'https://movie.douban.com/subject/34801038/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '2021去死',
+ 'movie_rate': '7.1',
+ 'movie_url': 'https://movie.douban.com/subject/35685660/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '灵魂脱离者',
+ 'movie_rate': '6.5',
+ 'movie_url': 'https://movie.douban.com/subject/30327625/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '8位机圣诞',
+ 'movie_rate': '6.7',
+ 'movie_url': 'https://movie.douban.com/subject/35384188/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '法兰西特派',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/30300279/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '新生化危机',
+ 'movie_rate': '4.6',
+ 'movie_url': 'https://movie.douban.com/subject/26140265/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '魔法满屋',
+ 'movie_rate': '6.6',
+ 'movie_url': 'https://movie.douban.com/subject/35134724/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '杰伊·比姆',
+ 'movie_rate': '8.7',
+ 'movie_url': 'https://movie.douban.com/subject/35652715/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '上帝之手',
+ 'movie_rate': '7.9',
+ 'movie_url': 'https://movie.douban.com/subject/35134764/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '最后的决斗',
+ 'movie_rate': '8.4',
+ 'movie_url': 'https://movie.douban.com/subject/34658290/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '倒数时刻',
+ 'movie_rate': '8.3',
+ 'movie_url': 'https://movie.douban.com/subject/30279170/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '天鹅挽歌',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/35258381/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '芬奇',
+ 'movie_rate': '8.4',
+ 'movie_url': 'https://movie.douban.com/subject/26897885/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '世界上最糟糕的人',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/34447553/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '花束般的恋爱',
+ 'movie_rate': '8.7',
+ 'movie_url': 'https://movie.douban.com/subject/34874432/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '驾驶我的车',
+ 'movie_rate': '8.0',
+ 'movie_url': 'https://movie.douban.com/subject/35235502/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '犬之力',
+ 'movie_rate': '7.6',
+ 'movie_url': 'https://movie.douban.com/subject/33437152/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '浅草小子',
+ 'movie_rate': '8.1',
+ 'movie_url': 'https://movie.douban.com/subject/35262731/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '毒液2',
+ 'movie_rate': '5.0',
+ 'movie_url': 'https://movie.douban.com/subject/30382416/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '沙丘',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/3001114/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '圣母',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/26933588/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '无辜者',
+ 'movie_rate': '7.1',
+ 'movie_url': 'https://movie.douban.com/subject/34970325/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '健听女孩',
+ 'movie_rate': '8.6',
+ 'movie_url': 'https://movie.douban.com/subject/35048413/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '天赐灵机',
+ 'movie_rate': '7.6',
+ 'movie_url': 'https://movie.douban.com/subject/33437580/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '不可饶恕',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/34881718/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '鹿角',
+ 'movie_rate': '5.3',
+ 'movie_url': 'https://movie.douban.com/subject/27605563/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '斯宾塞',
+ 'movie_rate': '6.6',
+ 'movie_url': 'https://movie.douban.com/subject/35101435/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '偶然与想象',
+ 'movie_rate': '8.3',
+ 'movie_url': 'https://movie.douban.com/subject/35360296/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '天书奇谭',
+ 'movie_rate': '9.2',
+ 'movie_url': 'https://movie.douban.com/subject/1428581/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': 'Soho区惊魂夜',
+ 'movie_rate': '6.8',
+ 'movie_url': 'https://movie.douban.com/subject/30447440/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '不老奇事',
+ 'movie_rate': '6.2',
+ 'movie_url': 'https://movie.douban.com/subject/27008393/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '怪兽训练营',
+ 'movie_rate': '6.2',
+ 'movie_url': 'https://movie.douban.com/subject/34809114/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '黑寡妇',
+ 'movie_rate': '6.3',
+ 'movie_url': 'https://movie.douban.com/subject/25828589/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '小人物',
+ 'movie_rate': '7.8',
+ 'movie_url': 'https://movie.douban.com/subject/34865507/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '摩加迪沙',
+ 'movie_rate': '8.1',
+ 'movie_url': 'https://movie.douban.com/subject/33457594/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '失控玩家',
+ 'movie_rate': '7.5',
+ 'movie_url': 'https://movie.douban.com/subject/30337388/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '法兰西',
+ 'movie_rate': '7.0',
+ 'movie_url': 'https://movie.douban.com/subject/30465538/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '红色通缉令',
+ 'movie_rate': '6.3',
+ 'movie_url': 'https://movie.douban.com/subject/30143331/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '在你面前',
+ 'movie_rate': '7.7',
+ 'movie_url': 'https://movie.douban.com/subject/35465742/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '兹山鱼谱',
+ 'movie_rate': '8.7',
+ 'movie_url': 'https://movie.douban.com/subject/30409439/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '007：无暇赴死',
+ 'movie_rate': '6.7',
+ 'movie_url': 'https://movie.douban.com/subject/20276229/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '平行母亲',
+ 'movie_rate': '7.2',
+ 'movie_url': 'https://movie.douban.com/subject/35123985/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': 'X特遣队：全员集结',
+ 'movie_rate': '8.0',
+ 'movie_url': 'https://movie.douban.com/subject/26741632/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '尚气与十环传奇',
+ 'movie_rate': '6.1',
+ 'movie_url': 'https://movie.douban.com/subject/30394797/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '钛',
+ 'movie_rate': '6.4',
+ 'movie_url': 'https://movie.douban.com/subject/34820925/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '不速来客',
+ 'movie_rate': '6.6',
+ 'movie_url': 'https://movie.douban.com/subject/34927916/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '在糟糕的日子里',
+ 'movie_rate': '7.5',
+ 'movie_url': 'https://movie.douban.com/subject/35293160/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '扎克·施奈德版正义联盟',
+ 'movie_rate': '8.2',
+ 'movie_url': 'https://movie.douban.com/subject/35076714/'}
+2021-12-30 14:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&page_limit=50&page_start=0>
+{'movie_name': '天空',
+ 'movie_rate': '6.9',
+ 'movie_url': 'https://movie.douban.com/subject/35573989/'}
+2021-12-30 14:03:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-12-30 14:03:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 380,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2908,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.963391,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 12, 30, 6, 3, 44, 820071),
+ 'httpcompression/response_bytes': 14093,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 51,
+ 'log_count/INFO': 10,
+ 'memusage/max': 57159680,
+ 'memusage/startup': 57159680,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 12, 30, 6, 3, 43, 856680)}
+2021-12-30 14:03:44 [scrapy.core.engine] INFO: Spider closed (finished)

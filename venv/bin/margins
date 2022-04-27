@@ -1,4 +1,4 @@
-#!/Users/developer/Documents/Python_Study/venv/bin/python
+#!/Users/developer/Documents/Python/Python_Study/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

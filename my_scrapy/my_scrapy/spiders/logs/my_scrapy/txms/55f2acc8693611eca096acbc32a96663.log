@@ -1,0 +1,369 @@
+2021-12-30 14:04:28 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: my_scrapy)
+2021-12-30 14:04:28 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.5 (v3.9.5:0a7dcbdb13, May  3 2021, 13:17:02) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform macOS-10.16-x86_64-i386-64bit
+2021-12-30 14:04:28 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-12-30 14:04:28 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'my_scrapy',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/my_scrapy/txms/55f2acc8693611eca096acbc32a96663.log',
+ 'NEWSPIDER_MODULE': 'my_scrapy.spiders',
+ 'SPIDER_MODULES': ['my_scrapy.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 '
+               'Safari/537.36'}
+2021-12-30 14:04:28 [scrapy.extensions.telnet] INFO: Telnet Password: ad625a930c80ff5b
+2021-12-30 14:04:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-12-30 14:04:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-12-30 14:04:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-12-30 14:04:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['my_scrapy.pipelines.MyScrapyPipeline']
+2021-12-30 14:04:28 [scrapy.core.engine] INFO: Spider opened
+2021-12-30 14:04:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-12-30 14:04:28 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-12-30 14:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30> (referer: None)
+2021-12-30 14:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30> (referer: None)
+2021-12-30 14:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30> (referer: None)
+2021-12-30 14:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30> (referer: None)
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '迷你世界爆笑同人动画', 'name': '迷你小洞'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '涅槃如故，血荐轩辕', 'name': '神医九小姐'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '剑荡万域，凡人亦封神', 'name': '万域封神'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '一剑入山河，天下并两界', 'name': '人间最得意'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '如果屁登长大后会做些什么', 'name': '猪屁登 第2季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '骊珠降世，命运改写！', 'name': '蜀山奇仙录'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '暖心家庭的温馨生活', 'name': '面膜妈妈养娃-小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '还有这样沙雕的修仙番？', 'name': '一念永恒'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '玄京废少，搞怪逆袭', 'name': '狂神魔尊'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '用现代知识称霸古代世界', 'name': '小品一家人之空间宝石'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '小故事 大智慧', 'name': '小品一家人之讲道理超人'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '万物有界，爱恨无由', 'name': '狐妖小红娘'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '银河冒险，血战星骸！', 'name': '星骸骑士'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '二胎家庭的矛盾和日常', 'name': '爆笑两姐妹'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '涅槃重生，逆天改命！', 'name': '万界独尊'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '美好世界由我拯救！', 'name': '万界法神'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '完结！去做你要做的事吧', 'name': '画江湖之不良人 第4季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '夷陵老祖重现人间', 'name': '魔道祖师'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '斗罗大陆，神龙降临', 'name': '斗罗大陆3龙王传说·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '吃不完的狗粮都在这里', 'name': '阿巳与小铃铛'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '唐三之后，斗罗大陆新星降临。', 'name': '斗罗大陆2 绝世唐门·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '十万年逆转乾坤！', 'name': '我被困在同一天十万年·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '美少女的正义冒险', 'name': '大神探诸葛九九'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '系统加持，走向人生巅峰', 'name': '我能看到成功率 第1季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '当赘婿只是为了追老婆', 'name': '龙王殿 第1季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '豆瓣高分人气动画再度回归', 'name': '一人之下 第3季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '赛几不寻常的日常故事', 'name': '小狮子赛几 - 小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '警告！无限流系统已开启', 'name': '我能看到成功率 第2季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '每周二吃点好动漫', 'name': '速食泡漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=30&pagesize=30>
+{'desc': '七大类型百部国漫登场', 'name': '2021腾讯视频动漫年度发布'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '一个来自八九十年代的女孩', 'name': '王蓝莓的生活日常'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '少年动天下，武者定乾坤', 'name': '武动乾坤'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': None, 'name': '星座狗联盟之射手小浪'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '异火臣服 萧炎掌握佛怒火莲', 'name': '斗破苍穹 第3季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '传说人物him的故事', 'name': 'MC战纪'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '萧炎归来 风云再起', 'name': '斗破苍穹 第2季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '熊孩子兄弟勇闯迷你大陆', 'name': '迷你大陆'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '战天斗地！唯我独尊！', 'name': '九霄帝神 第1季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '问天一剑，能否天荒地老', 'name': '天荒战神'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '热血西行，披荆斩棘', 'name': '西行纪'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '魔法世界的欢乐校园生活', 'name': '小品一家人之奇幻世界'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '荣耀不灭，王者卷土重来', 'name': '全职高手 第2季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '熊卷与妈妈的爆笑日常', 'name': '熊卷&妈妈'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '神仙妖怪的爆笑日常', 'name': '非人哉'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '杰克大魔王来到现实世界', 'name': '杰克大魔王 - 小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '武林风云，波澜再起！', 'name': '墓王之王'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '殿前比试，踢到钢板了！', 'name': '首席御灵师'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '炼气期怎么了？我很强的', 'name': '炼气练了三千年·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': None, 'name': '嘻哈包仔'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '好嗨呀！少年激燃战群豪！', 'name': '斗破苍穹·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '一季完结 少年乘空翱翔', 'name': '斗破苍穹 第1季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '废柴逆袭，武道至尊！', 'name': '绝世武神 第3季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '紫川秀成名之战', 'name': '紫川·互动剧 第1章'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '大表叔和表侄儿的冒险之旅', 'name': '无限吃鸡小队'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '在小说世界里斗智斗勇', 'name': '被迫成为反派赘婿 第1季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '吃货熊大卫的美食日常', 'name': '元气食堂-小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '脑洞大开的奇妙日常', 'name': '小狮子赛几'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '鼠星星的吃货哲学', 'name': '鼠星星'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '都市仙侠，异界之旅开启', 'name': '斗魂卫之玄月奇缘'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=60&pagesize=30>
+{'desc': '阿月和小伙伴们的搞笑日常', 'name': '胡闹鬼阿月-小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '此生不悔入唐门', 'name': '斗罗大陆'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '赴三年之约 战云岚之巅', 'name': '斗破苍穹三年之约'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '普通锤锤的爆笑日常', 'name': '开心锤锤'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '武神跌落，浴火少年再起', 'name': '武神主宰'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '天地三界，我为至尊！', 'name': '灵剑尊'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '超凡归来 薪火相传', 'name': '雪鹰领主'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '仙王觉醒，重归万界巅峰', 'name': '无上神帝'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '仙魔一念，人间千载', 'name': '万界仙踪'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '岁月淹埋，休想把我沉浮！', 'name': '完美世界'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '陨落古神，遨游苍蓝', 'name': '万界神主'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '吞噬龙血，少年逆天崛起', 'name': '绝世武魂'}
+2021-12-30 14:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30> (referer: None)
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '妹控穿越游戏拯救世界', 'name': '幻游猎人'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '莫凡火雷双系狂揍审判员', 'name': '全职法师 第5季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '西洋神怪的东方合租日常', 'name': '万圣街'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '破除阻碍，异界振兴中药', 'name': '异世界中药铺'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '废物触底逆袭强势归来！', 'name': '武逆 第1季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '萌宠天团日常逗趣', 'name': '飞狗MOCO之宠物店的小秘密'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '用现代知识称霸古代仙界', 'name': '我是大神仙'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '风起云涌罗天大醮', 'name': '一人之下 第2季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '神级漫画家的史诗剧作', 'name': '阿衰'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '手掌吞灵，逆袭而上！', 'name': '唯我独神'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '狼人化成人形出道做爱豆', 'name': '狼人沈天 - 小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '超高颜值的权谋史诗', 'name': '天行九歌'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '幽默搞笑的一家四口', 'name': '小品一家人 四川方言版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '群雄侠隐仗剑', 'name': '画江湖之不良人 第1季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '王者英雄的爆笑故事', 'name': '王者脑洞所'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '超高颜值古风3D动画', 'name': '眷思量'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '小品的搞笑温馨日常', 'name': '小品一家人'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '少年热血闯红尘', 'name': '独步逍遥'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '灵气复苏，少年崛起', 'name': '大王饶命'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '重生踏足武道巅峰', 'name': '妖神记'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '鸿蒙一念间，以血祭陈渊。', 'name': '逆天至尊'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '神力觉醒，三界大战！', 'name': '武庚纪'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '银河浩瀚，征途不止', 'name': '吞噬星空'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '大孝子气人逆天之路', 'name': '我气哭了百万修炼者'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '云荒烽火起 三族情仇乱', 'name': '镜·双城'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '一周鹅友神弹幕TOP10', 'name': '动漫弹弹乐'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '柯基与主人的搞笑日常', 'name': '飞狗MOCO'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '穿星辰沧海 赴羽立之约', 'name': '星辰变'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '吃货熊大卫的美食日常', 'name': '元气食堂'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '“临时工”集结！', 'name': '一人之下 第4季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '和猪屁登一起传递正能量', 'name': '猪屁登'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '紫川三杰纵横西川大陆', 'name': '紫川'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '少年不屈 异火不熄', 'name': '斗破苍穹 第4季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': '最强赛车手的诞生', 'name': '画江湖之轨夜行'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=0&pagesize=30>
+{'desc': None, 'name': '我是不白吃'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '猜不到结局的脑洞小动画', 'name': '卡通盒子'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '少年江湖远，仙魔一念间', 'name': '流星幻剑'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '废柴少年超级武魂显神威', 'name': '妖者为王·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '主角光环VS反派光环', 'name': '被迫成为反派赘婿 第2季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '平淡的校园的爆笑日常', 'name': '茶啊二中 第4季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '莫凡觉醒恶魔系能力', 'name': '全职法师 第4季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '都市妖怪治愈日常', 'name': '都市妖怪生存指南-小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '倒卖三界财宝，玩转人生', 'name': '我的微信连三界 第2季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '最强首席，开启奇险之旅！', 'name': '伍六七之玄武国篇'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '欢喜冤家又重聚', 'name': '我的狐仙女帝'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '超能力拥有者搞笑再袭', 'name': '超能力小苏 第2季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '坦克世界大激斗', 'name': '坦克吃鸡大作战 第二季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '科幻系狼人变成爱豆', 'name': '狼人沈天'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=90&pagesize=30>
+{'desc': '怕踢天团的爆笑日常', 'name': '阿衰 第6季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '狂充300亿，称霸游戏全服', 'name': '氪金玩家·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '小品爆笑日常小视频版', 'name': '小品一家人-小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '冉冉和熊猫兔的爆笑日常', 'name': '冉冉爱熊猫兔'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '一代宗师入红尘修剑心', 'name': '山河剑心'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '小短腿，天天好心情', 'name': '飞狗MOCO之家有小短腿'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '先虐后撩甜宠霸总动画', 'name': '狗哥杰克苏'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '在游戏里生存的爆笑故事', 'name': '迷你兄弟'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '书穿反派开启洗白之路', 'name': '穿书自救指南'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '十年热血书写电竞辉煌', 'name': '全职高手 第1季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '人妖殊途，情丝不断', 'name': '仙风剑雨录'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '王者弈天下 大唐生死局', 'name': '画江湖之不良人 第3季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '茶啊二中的爆笑校园生活', 'name': '茶啊二中爆笑小视频'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '玛丽苏少女喵历险记', 'name': 'nana娜娜酱'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '总裁变身成狼谈恋爱', 'name': '魔王老公欠调教'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '此生不悔入唐门', 'name': '斗罗大陆合集篇'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '傲苍穹、主宰武道！', 'name': '绝世武神 第4季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '最强剑仙攻略女尊异界', 'name': '本剑仙绝不吃软饭·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '每周六、周末更新', 'name': '动态漫画·绝世武神 第2季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '修炼撩妹两不误', 'name': '都市绝品仙帝·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '法师集结，决战狂魔', 'name': '全职法师 第3季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '系统更新，第三季来袭！', 'name': '我能看到成功率 第3季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '霸道总裁与傻白甜', 'name': '铁头与橘子-小视频特别版'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '宗师尚在，国术不死！', 'name': '极道宗师 第2季·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '一个修仙世界的外卖员', 'name': '外卖仙人成天'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '口吞烈阳，燃铸我身！', 'name': '万界春秋'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '仙师出手，一拳致胜', 'name': '琅寰书院·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '异人不老少女', 'name': '一人之下 第1季'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '追求着那主宰之路', 'name': '斗破苍穹之大主宰·动态漫'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': '迷你世界同人吃鸡动画', 'name': '迷你吃鸡小队'}
+2021-12-30 14:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://v.qq.com/x/bu/pagesheet/list?append=1&channel=cartoon&iarea=1&listpage=2&offset=120&pagesize=30>
+{'desc': None, 'name': '吃鸡爆笑兄弟'}
+2021-12-30 14:04:29 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-12-30 14:04:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1895,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 161513,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'elapsed_time_seconds': 0.58521,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 12, 30, 6, 4, 29, 316811),
+ 'item_scraped_count': 150,
+ 'log_count/DEBUG': 155,
+ 'log_count/INFO': 10,
+ 'memusage/max': 57167872,
+ 'memusage/startup': 57167872,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2021, 12, 30, 6, 4, 28, 731601)}
+2021-12-30 14:04:29 [scrapy.core.engine] INFO: Spider closed (finished)
