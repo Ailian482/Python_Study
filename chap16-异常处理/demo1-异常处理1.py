@@ -66,7 +66,23 @@ my_dict = {'one': 1, 'two': 2, 'three': 3}
 # my_dict['four']  # KeyError: 'four'
 my_dict.get('four')  # 字典的 get() 方法比使用 索引好
 
+
 # print(1 + '1')  # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 # print(3/0)  # ZeroDivisionError: division by zero
 
+
+def cunzai(a, b):
+    try:
+        n = a / b
+    except:
+        return False
+    return True
+
+
+for i in range(11):
+    if cunzai(1, i) is True:
+        print("chucuole")
+        continue
+    else:
+        break

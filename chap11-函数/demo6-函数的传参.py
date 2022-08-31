@@ -14,8 +14,8 @@ my_argument(10, 18)  # 10, 18 就是实参
 
 # python函数的传参方式有四种：位置参数、默认参数、关键字参数
 def chuancan(**kwargs):
-    print("小明的家{}".format(kwargs))
+    print("小明的家{}".format(kwargs["a"]))
     print(kwargs)
 
 
-chuancan(a=12, b=13)
+chuancan(a="[12]", b=13)
