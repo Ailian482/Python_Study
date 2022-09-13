@@ -1,0 +1,22 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+/venv
+.DS_Store
+git
+.html
+*.html
+# virtualenv
+bin
+lib
+pyvenv.cfg
+*.pyc
+*.log
+.vscode
+
