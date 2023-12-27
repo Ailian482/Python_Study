@@ -25,20 +25,25 @@ os.path.samefile(path1, path2)  判断path1和path2是否指向同一个文件
 import os
 import time
 
+
 # os.path.basename(path)  去掉目录路径，单独返回文件名，没有文件，会把最后一个目录当作文件名返回
 print(os.path.basename('chap15-文件/demo1-什么是文件？.py'))
 
 # os.path.dirname(path)  去掉文件名，单独返回目录路径
 print(os.path.dirname('chap15-文件/demo1-什么是文件？.py'))
-print(os.listdir(os.path.dirname('/Users/developer/Documents/Python_Study/chap15-文件/demo1-什么是文件？.py')))
+
+# 获取指定路径下所有子文件的名称
+print(os.listdir(os.path.dirname('/Users/tehang/Python_Study/chap15-文件/demo1-什么是文件？.py')))
 
 # os.path.join(path1[path2[, ...]])  将path1，path2等组合成一个路径名
 print(os.path.join('A', 'B', 'C'))
 
 # os.path.split(path)
 # 分割文件名与路径，返回（f_path, f_name)元组，如果完全使用目录，他会将最后一个目录作为文件名分割，且不会判断文件或者目录是否存在
+# 返回的 f_name 永远都不会包含斜杠「/」，如果这个路径是以 斜杠「/」结尾，那么返回 f_name 为空。
 print(os.path.split('A/B/sexy.py'))
-print(os.path.split('A/B/C'))
+print(os.path.split('A/B/'))
+print(os.path.split(__file__))  # 返回当前目录下的 目录和文件名（f_path, f_name）
 
 # os.path.splitext(path)  分离文件名与扩展名，返回（f_name, f_extension）元组
 print(os.path.splitext('A/B/C/sexy.avi'))
