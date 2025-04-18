@@ -1,4 +1,4 @@
-{"id": null, "consignee": "20", "mobile": "11145637594", "address": "6573564444", "defaulted": null, "wasCorpAddress": null, "province": "广东省", "city": "深圳市", "area": "福田区"}
+{"id": None, "consignee": "20", "mobile": "11145637594", "address": "6573564444", "defaulted": None, "wasCorpAddress": null, "province": "广东省", "city": "深圳市", "area": "福田区"}
 {"id": null, "consignee": "21", "mobile": "11145637595", "address": "6573564445", "defaulted": null, "wasCorpAddress": null, "province": "广东省", "city": "深圳市", "area": "福田区"}
 {"id": null, "consignee": "22", "mobile": "11145637596", "address": "6573564446", "defaulted": null, "wasCorpAddress": null, "province": "广东省", "city": "深圳市", "area": "福田区"}
 {"id": null, "consignee": "23", "mobile": "11145637597", "address": "6573564447", "defaulted": null, "wasCorpAddress": null, "province": "广东省", "city": "深圳市", "area": "福田区"}
